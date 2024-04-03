@@ -35,12 +35,14 @@ function restyle() {
   var randOutputColor = "rgb("+randR+","+randG+","+randB+")";
 
   var randNumBig = Math.floor(Math.random() * 50) + -50;
-  var randSpin = "rotate("+randNumBig+"deg)";
+  var randNumSmall = Math.random() + 0.3;
+  var randSpin = "rotate("+randNumBig+"deg)" + "scale("+randNumSmall+","+randNumSmall+")";
+//I had to apply the rotate and scale on the same row or only one would work*
 
-  var randNumSmall = Math.random()+0.5;
-  var randGrow = "scale("+randNumSmall+","+randNumSmall+")";
+  // var randNumSmall = Math.random()*5;
+  // var randGrow = "scale("+randNumSmall+","+randNumSmall+")";
 
-  heading.style.color = randOutputColor;
+  outputElem.style.color = randOutputColor;
   outputElem.style.transform = randSpin;
-  container.style.transform = randGrow;
+  // outputElem.style.transform = randGrow;
 }
