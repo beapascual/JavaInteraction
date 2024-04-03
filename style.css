@@ -1,0 +1,48 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: black;
+  color: white;
+  text-shadow: 1px 1px 5px black;
+  transition: all 2s;
+}
+
+#mainContainer{
+  padding: 20px;
+  border-style: dashed;
+  border-color: black;
+  border-width: 2px;
+}
+
+#title{
+  transition: all 2s;
+  font-size: 50px;
+}
+
+#question{
+  font-size: 30px;
+}
+
+input{
+  font-size: 20px;
+  margin-bottom: 10vh;
+}
+
+button{
+  font-size: 20px;
+  background-color: #CBC3E3;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+}
+
+#outputText {
+  transition: all 2s;
+  font-size: 30px;
+  padding: 10vh;
+  color: black;
+  text-shadow: none;
+}
